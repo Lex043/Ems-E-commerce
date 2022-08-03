@@ -4,8 +4,7 @@ import EmsContext from "../context/EmsContext";
 import { PaystackButton } from "react-paystack";
 
 const Checkout = () => {
-  const { isEmpty, items, updateItemQuantity, removeItem, totalAmt } =
-    useContext(EmsContext);
+  const { totalAmt } = useContext(EmsContext);
 
   const publicKey = "pk_test_845ecfe9aef12ac7903aed2db990aac02df222ef";
   const amount = totalAmt * 100; // Remember, set in kobo!
@@ -31,21 +30,21 @@ const Checkout = () => {
     <>
       <div className="bg-[#ffe9d6] h-screen pt-28">
         <form className="flex flex-col px-20 mx-auto w-auto border-none outline-none">
-          <label className="font-bold">Name</label>
+          <label>Name</label>
           <input
             type="text"
             onChange={(e) => setName(e.target.value)}
             className="border-none outline-none h-8 rounded-md"
           />
 
-          <label className="font-bold">Email</label>
+          <label>Email</label>
           <input
             type="text"
             onChange={(e) => setEmail(e.target.value)}
             className="border-none outline-none h-8 rounded-md"
           />
 
-          <label className="font-bold">Phone Number</label>
+          <label>Phone Number</label>
           <input
             type="numbers"
             onChange={(e) => setPhone(e.target.value)}

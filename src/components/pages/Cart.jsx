@@ -9,26 +9,26 @@ const Cart = () => {
 
   return (
     <>
-      <div className="bg-[#ffe9d6] h-screen">
+      <div className="h-screen bg-[#ffe9d6]">
         {isEmpty ? (
           <EmptyCart />
         ) : (
           items.map((item) => (
-            <div
-              className="py-5 px-10 bg-[#ffe9d6] h-auto shadow-xl lg:shadow-2xl"
-              key={item.id}
-            >
-              <div className="flex gap-2 justify-self-center">
+            <div className="mb-5 shadow-xl lg:shadow-2xl" key={item.id}>
+              <div className="flex justify-between h-32 items-center px-5">
                 <div>
-                  <img src={item.img} alt="" className="w-20" />
+                  <img src={item.img} alt="" className="w-28 h-28" />
                 </div>
-                <p className="font-semibold text-xl leading-relaxed">
-                  {item.name}. <br /> <span>&#8358;</span>
-                  {item.quantity * item.price}
-                </p>
+
+                <div className=" text-xl leading-relaxed">
+                  <p>
+                    {item.name}. <br /> <span>&#8358;</span>
+                    {item.quantity * item.price}
+                  </p>
+                </div>
               </div>
 
-              <div className="flex justify-between pt-2">
+              <div className="flex justify-between h-16 px-5">
                 <div>
                   <button
                     className="border px-2 py-2 hover:text-white hover:bg-[#ff9a3d]"
@@ -57,6 +57,37 @@ const Cart = () => {
                     +
                   </button>
                 </div>
+              </div>
+
+              <div className="flex justify-between">
+                {/* <div>
+                  <button
+                    className="border px-2 py-2 hover:text-white hover:bg-[#ff9a3d]"
+                    onClick={() => removeItem(item.id)}
+                  >
+                    Remove Item
+                  </button>
+                </div> */}
+
+                {/* <div className="flex gap-4 items-center ">
+                  <button
+                    className="bg-[#ff9a3d] px-2 py-2 w-9 text-white"
+                    onClick={() =>
+                      updateItemQuantity(item.id, item.quantity - 1)
+                    }
+                  >
+                    -
+                  </button>
+                  <p>{item.quantity}</p>
+                  <button
+                    className="bg-[#ff9a3d] px-2 py-2 w-9 text-white "
+                    onClick={() =>
+                      updateItemQuantity(item.id, item.quantity + 1)
+                    }
+                  >
+                    +
+                  </button>
+                </div> */}
               </div>
             </div>
           ))

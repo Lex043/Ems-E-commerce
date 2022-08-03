@@ -9,19 +9,19 @@ const Products = () => {
 
   return (
     <>
-      <div className="h-auto pt-5 pb-9 px-10">
+      <div className="h-auto pt-5 pb-9">
         <div className="text-black font-bold text-2xl text-center">
           <h1>OUR GADGETS</h1>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-6 pt-5 md:gap-8 lg:grid grid-cols-6 justify-items-center lg:gap-8">
+        <div className="grid grid-cols-1 justify-center gap-6 pt-5 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {goods.map((good) => (
             <div key={good.id}>
-              <div>
-                <img src={good.img} alt="samsungTV" className="w-40" />
+              <div className="w-full px-3">
+                <img src={good.img} alt="samsungTV" className="w-full h-full" />
               </div>
 
-              <div className="text-center rounded-md pb-2 shadow-xl font-bold ">
+              <div className="text-center rounded-md py-3 shadow-xl font-bold ">
                 <p>{good.name}</p>
                 <p>
                   <span>&#8358;</span>
