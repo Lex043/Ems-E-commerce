@@ -1,4 +1,9 @@
 import samsung from "./assets/product1.png";
+import pixel from "./assets/product2.png";
+import ps from "./assets/product3.png";
+import MacBook from "./assets/product4.png";
+import AppleWatch from "./assets/product5.png";
+import Airpods from "./assets/product6.png";
 
 const data = [
   {
@@ -10,31 +15,31 @@ const data = [
   {
     id: 2,
     name: "Pixel 4a",
-    img: "/src/assets/product2.png",
+    img: pixel,
     price: 250000,
   },
   {
     id: 3,
     name: "PS 5",
-    img: "/src/assets/product3.png",
+    img: ps,
     price: 300000,
   },
   {
     id: 4,
     name: "MacBook Air",
-    img: "/src/assets/product4.png",
+    img: MacBook,
     price: 800000,
   },
   {
     id: 5,
     name: "Apple Watch",
-    img: "/src/assets/product5.png",
+    img: AppleWatch,
     price: 95000,
   },
   {
     id: 6,
     name: "Air Pods",
-    img: "/src/assets/product6.png",
+    img: Airpods,
     price: 75000,
   },
 ];
