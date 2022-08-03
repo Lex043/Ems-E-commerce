@@ -1,8 +1,10 @@
+import samsung from "./assets/product1.png";
+
 const data = [
   {
     id: 1,
     name: "Samsung TV",
-    img: "/src/assets/product1.png",
+    img: samsung,
     price: 500000,
   },
   {
