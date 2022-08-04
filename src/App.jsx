@@ -10,7 +10,7 @@ function App() {
   return (
     <CartProvider>
       <EmsProvider>
-        <div className="min-h-screen flex flex-col">
+        <div className="flex flex-col min-h-screen">
           <Router>
             <Navbar />
             <Routes>
