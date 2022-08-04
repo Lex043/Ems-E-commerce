@@ -14,7 +14,7 @@ const Products = () => {
           <h1>OUR GADGETS</h1>
         </div>
 
-        <div className="grid min-h-screen grid-cols-1 justify-items-center gap-6 pt-5 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid min-h-screen grid-cols-1 justify-center gap-6 pt-5 px-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
           {goods.map((good) => (
             <div key={good.id}>
               <div className="w-full px-3">
