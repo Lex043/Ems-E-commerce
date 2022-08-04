@@ -28,7 +28,7 @@ const Checkout = () => {
 
   return (
     <>
-      <div className="bg-[#ffe9d6] h-screen pt-28">
+      <div className="bg-[#ffe9d6] min-h-screen pt-28">
         <form className="flex flex-col px-20 mx-auto w-auto border-none outline-none">
           <label>Name</label>
           <input
