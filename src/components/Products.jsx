@@ -9,12 +9,12 @@ const Products = () => {
 
   return (
     <>
-      <div className="h-auto flex flex-col mx-auto">
+      <div className="pt-3">
         <div className="text-black font-bold text-2xl text-center">
           <h1>OUR GADGETS</h1>
         </div>
 
-        <div className="grid h-full grid-cols-1 justify-center gap-6 pt-5 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid min-h-screen grid-cols-1 justify-items-center gap-6 pt-5 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {goods.map((good) => (
             <div key={good.id}>
               <div className="w-full px-3">
