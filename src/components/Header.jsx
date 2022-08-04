@@ -10,8 +10,8 @@ const Header = () => {
               THE <br /> E-MILLENIAL STORE
             </h1>
           </div>
-          <div className="w-60">
-            <img src={headerImg} alt="" className="w-64 flex shrink-0" />
+          <div>
+            <img src={headerImg} alt="" className="w-64 h-auto" />
           </div>
         </div>
         <div className="text-center text-xs text-white pb-7">
