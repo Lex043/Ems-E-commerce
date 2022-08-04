@@ -10,14 +10,16 @@ function App() {
   return (
     <CartProvider>
       <EmsProvider>
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/checkout" element={<Checkout />} />
-          </Routes>
-        </Router>
+        <div className="min-h-screen flex flex-col">
+          <Router>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/checkout" element={<Checkout />} />
+            </Routes>
+          </Router>
+        </div>
       </EmsProvider>
     </CartProvider>
   );
