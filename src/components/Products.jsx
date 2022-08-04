@@ -9,7 +9,7 @@ const Products = () => {
 
   return (
     <>
-      <div className="pt-5 pb-9">
+      <div className="pt-5 pb-9 h-full">
         <div className="text-black font-bold text-2xl text-center">
           <h1>OUR GADGETS</h1>
         </div>
