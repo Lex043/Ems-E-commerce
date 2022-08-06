@@ -1,10 +1,28 @@
+import { gsap, Power3 } from "gsap";
+import { useRef, useEffect } from "react";
 import headerImg from "../assets/heroImage.png";
 
 const Header = () => {
+  let textItem = useRef(null);
+
+  useEffect(() => {
+    gsap.to(textItem, 0.8, {
+      opacity: 1,
+      y: -10,
+      ease: Power3.easeOut,
+      delay: 0.2,
+    });
+  }, []);
+
   return (
     <>
       <div className="px-5 bg-[#ffe9d6] h-auto">
-        <div className="flex justify-between">
+        <div
+          ref={(el) => {
+            textItem = el;
+          }}
+          className="flex opacity-0 justify-between"
+        >
           <div className="text-[#ff7a3d] font-bold text-2xl sm:text-3xl flex items-center">
             <h1 className="w-48">
               THE <br /> E-MILLENIAL STORE
