@@ -2,9 +2,12 @@ import { useState } from "react";
 import { useContext } from "react";
 import EmsContext from "../context/EmsContext";
 import { PaystackButton } from "react-paystack";
+import { useNavigate } from "react-router-dom";
 
 const Checkout = () => {
   const { totalAmt } = useContext(EmsContext);
+
+  const navigate = useNavigate();
 
   const publicKey = "pk_test_845ecfe9aef12ac7903aed2db990aac02df222ef";
   const amount = totalAmt * 100; // Remember, set in kobo!
@@ -21,8 +24,8 @@ const Checkout = () => {
     },
     publicKey,
     text: "Pay Now",
-    onSuccess: () =>
-      alert("Thanks for doing business with us! Come back soon!!"),
+    onSuccess: () => navigate("/success"),
+
     onClose: () => alert("Wait! Don't leave :("),
   };
 
