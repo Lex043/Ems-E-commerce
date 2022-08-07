@@ -4,12 +4,14 @@ import EmsContext from "../context/EmsContext";
 import { PaystackButton } from "react-paystack";
 import { useNavigate } from "react-router-dom";
 
+const key = import.meta.env.VITE_SOME_KEY;
+
 const Checkout = () => {
   const { totalAmt } = useContext(EmsContext);
 
   const navigate = useNavigate();
 
-  const publicKey = "pk_test_845ecfe9aef12ac7903aed2db990aac02df222ef";
+  const publicKey = key;
   const amount = totalAmt * 100; // Remember, set in kobo!
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
