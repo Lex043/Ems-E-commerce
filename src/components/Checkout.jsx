@@ -30,38 +30,36 @@ const Checkout = () => {
   };
 
   return (
-    <>
-      <div className="bg-[#ffe9d6] min-h-screen">
-        <form className="flex flex-col px-5 sm:px-10 h-80 justify-center mx-auto w-auto border-none outline-none">
-          <label>Name</label>
-          <input
-            type="text"
-            onChange={(e) => setName(e.target.value)}
-            className="border-none outline-none h-8 rounded-md"
-          />
+    <div className="bg-[#ffe9d6] min-h-screen">
+      <form className="flex flex-col px-5 sm:px-10 h-80 justify-center mx-auto w-auto border-none outline-none">
+        <label>Name</label>
+        <input
+          type="text"
+          onChange={(e) => setName(e.target.value)}
+          className="border-none outline-none h-8 rounded-md"
+        />
 
-          <label>Email</label>
-          <input
-            type="text"
-            onChange={(e) => setEmail(e.target.value)}
-            className="border-none outline-none h-8 rounded-md"
-          />
+        <label>Email</label>
+        <input
+          type="email"
+          onChange={(e) => setEmail(e.target.value)}
+          className="border-none outline-none h-8 rounded-md"
+        />
 
-          <label>Phone Number</label>
-          <input
-            type="numbers"
-            onChange={(e) => setPhone(e.target.value)}
-            className="border-none outline-none h-8 rounded-md"
-          />
-        </form>
-        <div className="flex justify-center">
-          <PaystackButton
-            {...componentProps}
-            className="bg-[#ff9a3d] px-5 py-1 rounded-md font-Lobster"
-          />
-        </div>
+        <label>Phone Number</label>
+        <input
+          type="number"
+          onChange={(e) => setPhone(e.target.value)}
+          className="border-none outline-none h-8 rounded-md"
+        />
+      </form>
+      <div className="flex justify-center">
+        <PaystackButton
+          {...componentProps}
+          className="bg-[#ff9a3d] px-5 py-1 rounded-md font-Lobster"
+        />
       </div>
-    </>
+    </div>
   );
 };
 
