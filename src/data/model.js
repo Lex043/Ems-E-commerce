@@ -1,9 +1,9 @@
-import samsung from "./assets/product1.png";
-import pixel from "./assets/product2.png";
-import ps from "./assets/product3.png";
-import MacBook from "./assets/product4.png";
-import AppleWatch from "./assets/product5.png";
-import Airpods from "./assets/product6.png";
+import samsung from "../assets/product1.png";
+import pixel from "../assets/product2.png";
+import ps from "../assets/product3.png";
+import MacBook from "../assets/product4.png";
+import AppleWatch from "../assets/product5.png";
+import Airpods from "../assets/product6.png";
 
 const data = [
   {

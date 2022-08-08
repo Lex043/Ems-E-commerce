@@ -5,7 +5,7 @@ import logo from "../assets/EMS.svg";
 import cart from "../assets/cart.svg";
 
 const Navbar = () => {
-  const { totalUniqueItems } = useContext(EmsContext);
+  const { cartItems } = useContext(EmsContext);
 
   return (
     <nav className="bg-[#ffe9d6] px-5 flex shrink-0 justify-between py-3 sticky top-0 items-center">
@@ -17,7 +17,7 @@ const Navbar = () => {
         <Link to="/cart">
           <img src={cart} alt="" className="w-6" />
         </Link>
-        <p className="text-white text-xl font-medium">{totalUniqueItems}</p>
+        <p className="text-white text-xl font-medium">{cartItems.length}</p>
       </button>
     </nav>
   );
