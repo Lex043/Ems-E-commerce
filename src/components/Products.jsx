@@ -26,7 +26,7 @@ const Products = () => {
                 {good.price}
               </p>
               <button
-                className="text-xs border-2 border-black hover:bg-[#ff9a3d] px-6 py-2 rounded-md hover:border-[#ff9a3d] hover:text-white "
+                className=" text-xs border-2 border-black hover:bg-secondary px-6 py-2 rounded-md hover:border-secondary hover:text-white "
                 onClick={() => {
                   addItem(good);
                 }}

@@ -32,7 +32,7 @@ const Checkout = () => {
   };
 
   return (
-    <div className="bg-[#ffe9d6] min-h-screen">
+    <div className="bg-primary min-h-screen">
       <form className="flex flex-col px-5 sm:px-10 h-80 justify-center mx-auto w-auto border-none outline-none">
         <label>Name</label>
         <input
@@ -58,7 +58,7 @@ const Checkout = () => {
       <div className="flex justify-center">
         <PaystackButton
           {...componentProps}
-          className="bg-[#ff9a3d] px-5 py-1 rounded-md font-Lobster"
+          className="bg-secondary px-5 py-1 rounded-md font-Lobster"
         />
       </div>
     </div>

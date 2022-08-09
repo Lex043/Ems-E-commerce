@@ -4,7 +4,7 @@ import EmsContext from "../context/EmsContext";
 const CartItems = () => {
   const { cartItems, removeItem, deleteItem, addItem } = useContext(EmsContext);
   return (
-    <section className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
+    <section className="grid grid-cols-1 gap-2 animate-fade-in-up sm:grid-cols-2 lg:grid-cols-3">
       {cartItems.map((item) => (
         <div className="mb-5 shadow-md lg:shadow-lg" key={item.id}>
           <div className="flex justify-between h-32 pt-4 px-5">
@@ -19,7 +19,7 @@ const CartItems = () => {
           <div className="flex justify-between items-center h-16 px-5">
             <div>
               <button
-                className="border px-2 py-2 hover:text-white hover:bg-[#ff9a3d]"
+                className="border px-2 py-2 hover:text-white hover:bg-secondary"
                 onClick={() => {
                   deleteItem(item);
                 }}
@@ -30,7 +30,7 @@ const CartItems = () => {
 
             <div className="flex items-center ">
               <button
-                className="bg-[#ff9a3d] px-2 py-2 w-9 text-white"
+                className="bg-secondary px-2 py-2 w-9 text-white"
                 onClick={() => {
                   removeItem(item);
                 }}
@@ -39,7 +39,7 @@ const CartItems = () => {
               </button>
               <p className="w-9 text-center">{item.qty}</p>
               <button
-                className="bg-[#ff9a3d] px-2 py-2 w-9 text-white "
+                className="bg-secondary px-2 py-2 w-9 text-white "
                 onClick={() => {
                   addItem(item);
                 }}

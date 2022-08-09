@@ -8,12 +8,12 @@ const Cart = () => {
   const { cartItems, totalAmt } = useContext(EmsContext);
 
   return (
-    <section className="min-h-screen  bg-[#ffe9d6]">
+    <section className="min-h-screen  bg-primary">
       <div className="pt-5">
         {cartItems.length === 0 ? <EmptyCart /> : <CartItems />}
       </div>
 
-      <div className="px-10 font-bold text-2xl bg-[#ffe9d6] mt-auto">
+      <div className="px-10 font-bold text-2xl bg-primary mt-auto">
         <div className="flex justify-between">
           <p>Subtotal</p>
 
@@ -25,8 +25,9 @@ const Cart = () => {
 
         <Link to="/checkout">
           <div
+            // logic to display checkout button
             style={{ display: cartItems.length === 0 ? "none" : "block" }}
-            className="text-center py-1 text-white bg-[#ff9a3d] rounded-md"
+            className="text-center py-1 text-white bg-secondary rounded-md"
           >
             <button>Checkout</button>
           </div>

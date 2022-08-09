@@ -7,6 +7,7 @@ export const EmsProvider = ({ children }) => {
   const [goods, setGoods] = useState(data);
   const [cartItems, setCartItems] = useState([]);
 
+  // Subtotal calculations
   const initialValue = 0;
   const totalAmt = cartItems.reduce(
     (accumulator, current) => accumulator + current.price * current.qty,
@@ -28,6 +29,7 @@ export const EmsProvider = ({ children }) => {
     }
   };
 
+  // decreasing using the subtraction button
   const removeItem = (goods) => {
     const exist = cartItems.find((x) => x.id === goods.id);
     if (exist.qty === 1) {
