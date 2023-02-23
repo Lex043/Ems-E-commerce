@@ -12,7 +12,7 @@ const CartItems = () => {
 
             <p className="text-xl leading-relaxed">
               {item.name}. <br /> <span>&#8358;</span>
-              {item.price * item.qty}
+              {Number(item.price.replace(/\,/g, "")) * item.qty}
             </p>
           </div>
 

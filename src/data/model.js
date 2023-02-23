@@ -10,37 +10,37 @@ const data = [
     id: 1,
     name: "Samsung TV",
     img: samsung,
-    price: 500000,
+    price: "500,000",
   },
   {
     id: 2,
     name: "Pixel 4a",
     img: pixel,
-    price: 250000,
+    price: "250,000",
   },
   {
     id: 3,
     name: "PS 5",
     img: ps,
-    price: 300000,
+    price: "300,000",
   },
   {
     id: 4,
     name: "MacBook Air",
     img: MacBook,
-    price: 800000,
+    price: "800,000",
   },
   {
     id: 5,
     name: "Apple Watch",
     img: AppleWatch,
-    price: 95000,
+    price: "95,000",
   },
   {
     id: 6,
     name: "Air Pods",
     img: Airpods,
-    price: 75000,
+    price: "75,000",
   },
 ];
 

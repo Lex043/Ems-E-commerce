@@ -10,7 +10,8 @@ export const EmsProvider = ({ children }) => {
   // Subtotal calculations
   const initialValue = 0;
   const totalAmt = cartItems.reduce(
-    (accumulator, current) => accumulator + current.price * current.qty,
+    (accumulator, current) =>
+      accumulator + Number(current.price.replace(/\,/g, "")) * current.qty,
     initialValue
   );
 
