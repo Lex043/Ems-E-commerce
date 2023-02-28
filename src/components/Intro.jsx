@@ -1,7 +1,7 @@
 const Intro = () => {
   return (
     <article className="py-9 px-5 sm:px-10 md:px-15 bg-black text-center">
-      <p className="text-white animate-fade-in-up font-Lora">
+      <p className="text-white animate-fade-in-up font-mono">
         E-Millenial Store is an hypothetical online store for gadgets we believe
         every 'Millenial' or 'Gen-Z' should have today. We've got mobile phones,
         laptops, smartwatches and other gadgets. Explore all our gadgets and
