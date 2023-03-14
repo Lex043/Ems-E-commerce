@@ -11,8 +11,7 @@ const CartItems = () => {
             <img src={item.img} alt="" className="w-28 h-28" />
 
             <p className="text-xl leading-relaxed">
-              {item.name}. <br /> <span>&#8358;</span>
-              {Number(item.price.replace(/\,/g, "")) * item.qty}
+              {item.name}. <br /> ${item.price * item.qty}
             </p>
           </div>
 

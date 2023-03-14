@@ -10,10 +10,11 @@ export const EmsProvider = ({ children }) => {
   // Subtotal calculations
   const initialValue = 0;
   const totalAmt = cartItems.reduce(
-    (accumulator, current) =>
-      accumulator + Number(current.price.replace(/\,/g, "")) * current.qty,
+    (accumulator, current) => accumulator + Number(current.price) * current.qty,
     initialValue
   );
+
+  console.log(totalAmt);
 
   const addItem = (goods) => {
     const exist = cartItems.find((x) => x.id === goods.id);

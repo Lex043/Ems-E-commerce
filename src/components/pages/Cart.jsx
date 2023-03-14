@@ -17,10 +17,7 @@ const Cart = () => {
         <div className="flex justify-between">
           <p>Subtotal</p>
 
-          <p>
-            <span>&#8358;</span>
-            {totalAmt}
-          </p>
+          <p>${totalAmt}</p>
         </div>
 
         <Link to="/checkout">
