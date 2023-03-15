@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useContext } from "react";
 import EmsContext from "../context/EmsContext";
 import { PaystackButton } from "react-paystack";
@@ -58,7 +58,7 @@ const Checkout = () => {
       <div className="flex justify-center">
         <PaystackButton
           {...componentProps}
-          className="bg-secondary px-5 py-1 rounded-md font-Lobster"
+          className="bg-secondary px-5 py-1 rounded-md font-mono"
         />
       </div>
     </div>

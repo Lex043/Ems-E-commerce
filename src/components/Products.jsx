@@ -14,7 +14,7 @@ const Products = () => {
         {goods.map((good) => (
           <div
             key={good.id}
-            className="rounded-xl shadow-md hover:scale-105 transition duration-300 ease-in-out"
+            className="rounded-xl shadow-md hover:scale-105 transition duration-300 ease-in-out overflow-hidden"
           >
             <div className="w-full">
               <img

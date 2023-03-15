@@ -8,7 +8,7 @@ const Navbar = () => {
   const { cartItems } = useContext(EmsContext);
 
   return (
-    <nav className="bg-primary px-5 flex shrink-0 justify-between py-3 sticky top-0 items-center">
+    <nav className="bg-primary px-5 flex shrink-0 justify-between py-3 sticky top-0 items-center z-50">
       <Link to="/">
         <img src={logo} alt="" className="w-5/12" />
       </Link>
