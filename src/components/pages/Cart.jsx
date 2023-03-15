@@ -14,7 +14,10 @@ const Cart = () => {
       </div>
 
       <div className="px-10 font-bold text-2xl bg-primary mt-auto">
-        <div className="flex justify-between">
+        <div
+          className="flex justify-between"
+          style={{ display: cartItems.length === 0 ? "none" : "flex" }}
+        >
           <p>Subtotal</p>
 
           <p>${totalAmt}</p>

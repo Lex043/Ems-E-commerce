@@ -14,7 +14,7 @@ const Header = () => {
       <p className="text-center pb-5">
         <a
           href="#products"
-          className="bg-secondary rounded px-9 py-2 mx-auto text-xs scroll-smooth overflow-x-scroll text-white "
+          className="bg-secondary rounded px-9 py-2 mx-auto text-xs overflow-x-scroll text-white "
         >
           SHOP NOW
         </a>
