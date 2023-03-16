@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import EmsContext from "../context/EmsContext";
 import logo from "../assets/EMS.svg";
-import cart from "../assets/cart.svg";
 
 const Navbar = () => {
   const { cartItems } = useContext(EmsContext);
@@ -14,9 +13,11 @@ const Navbar = () => {
       </Link>
 
       <Link to="/cart">
-        <button className="flex shrink-0 items-center bg-secondary rounded-[19px] px-3 py-1 gap-1">
-          <img src={cart} alt="" className="w-6" />
-          <p className="text-white text-xl font-medium">{cartItems.length}</p>
+        <button className="flex items-center gap-1">
+          <span className="uppercase text-xs font-semibold">cart</span>
+          <span className="flex h-5 w-8 items-center justify-center rounded-full bg-secondary p-2 text-xs text-white">
+            {cartItems.length}
+          </span>
         </button>
       </Link>
     </nav>

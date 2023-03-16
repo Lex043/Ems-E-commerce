@@ -14,8 +14,6 @@ export const EmsProvider = ({ children }) => {
     initialValue
   );
 
-  console.log(totalAmt);
-
   const addItem = (goods) => {
     const exist = cartItems.find((x) => x.id === goods.id);
     if (exist) {
