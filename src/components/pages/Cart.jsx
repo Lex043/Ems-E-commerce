@@ -9,7 +9,7 @@ const Cart = () => {
 
   return (
     <section className="min-h-screen  bg-primary">
-      <div className="pt-5">
+      <div className="mt-5">
         {cartItems.length === 0 ? <EmptyCart /> : <CartItems />}
       </div>
 
