@@ -12,7 +12,7 @@ const Checkout = () => {
   const navigate = useNavigate();
 
   const publicKey = key;
-  const amount = totalAmt * 100; // Remember, set in kobo!
+  const amount = totalAmt * 46000;
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -37,22 +37,25 @@ const Checkout = () => {
         <label>Name</label>
         <input
           type="text"
+          placeholder="Enter name"
           onChange={(e) => setName(e.target.value)}
-          className="border-none outline-none h-8 rounded-md"
+          className="border-none outline-none h-8 rounded-md px-2"
         />
 
         <label>Email</label>
         <input
           type="email"
+          placeholder="Enter primary email"
           onChange={(e) => setEmail(e.target.value)}
-          className="border-none outline-none h-8 rounded-md"
+          className="border-none outline-none h-8 rounded-md px-2"
         />
 
         <label>Phone Number</label>
         <input
           type="number"
+          placeholder="Enter phone number"
           onChange={(e) => setPhone(e.target.value)}
-          className="border-none outline-none h-8 rounded-md"
+          className="border-none outline-none h-8 rounded-md px-2"
         />
       </form>
       <div className="flex justify-center">
