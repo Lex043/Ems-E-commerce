@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .input-style {
+    @apply border-none outline-none h-8 rounded-md px-2;
+  }
+
+  .item-btn {
+    @apply bg-secondary px-2 py-2 w-9 text-white;
+  }
+}

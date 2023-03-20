@@ -39,7 +39,7 @@ const Checkout = () => {
           type="text"
           placeholder="Enter name"
           onChange={(e) => setName(e.target.value)}
-          className="border-none outline-none h-8 rounded-md px-2"
+          className="input-style"
         />
 
         <label>Email</label>
@@ -47,7 +47,7 @@ const Checkout = () => {
           type="email"
           placeholder="Enter primary email"
           onChange={(e) => setEmail(e.target.value)}
-          className="border-none outline-none h-8 rounded-md px-2"
+          className="input-style"
         />
 
         <label>Phone Number</label>
@@ -55,7 +55,7 @@ const Checkout = () => {
           type="number"
           placeholder="Enter phone number"
           onChange={(e) => setPhone(e.target.value)}
-          className="border-none outline-none h-8 rounded-md px-2"
+          className="input-style"
         />
       </form>
       <div className="flex justify-center">

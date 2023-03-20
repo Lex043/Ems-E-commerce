@@ -29,7 +29,7 @@ const CartItems = () => {
 
             <div className="flex items-center ">
               <button
-                className="bg-secondary px-2 py-2 w-9 text-white"
+                className="item-btn"
                 onClick={() => {
                   removeItem(item);
                 }}
@@ -38,7 +38,7 @@ const CartItems = () => {
               </button>
               <p className="w-9 text-center">{item.qty}</p>
               <button
-                className="bg-secondary px-2 py-2 w-9 text-white "
+                className="item-btn"
                 onClick={() => {
                   addItem(item);
                 }}
